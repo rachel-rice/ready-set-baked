@@ -276,7 +276,7 @@ section > a{
 }
 
 .section-two section section img{
-  width: 20%;
+  /* width: 20%; */
   height: 20rem;
   margin: 1rem;
 }
