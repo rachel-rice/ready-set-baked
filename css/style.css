@@ -206,7 +206,7 @@ main .landing .landing-right{
   
 }
 
-.section-two, .section-three{
+.section-two {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -214,7 +214,7 @@ main .landing .landing-right{
   padding-top: 5rem;
 }
 
-.section-two > section, .section-three > section{
+.section-two > section{
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -281,10 +281,19 @@ section > a{
   margin: 1rem;
 }
 
-.section-three section{
+.section-three{
+  background-color: rgb(243, 244, 245);
+  
+  
+
+}
+/* 
+ 
+  
+
+.section-three section *{
   width: 90%;
 }
-
 
 .section-span{
   color: #FF8800 ;
@@ -293,30 +302,25 @@ section > a{
   margin: auto;
   display: block; 
 }
+
+.section-three section i{
+  width: 4%;
+  margin-top: 1rem;
+}
+*/
+.section-three section img{
+ height: 100px;
+} 
+
+
+
+
 /*  
 
 
 
 
 
-
-
-
-
-
-
-.section-three{
-  background-color: #FCFCFC; 
-}
-
-.section-three section{
-  width: 90%;
-}
-
-.section-three section .call-logo{
-  width: 4%;
-  margin-top: 3.5rem;
-}
 
 .section-three section h4{
   font-size: 1.2rem;
