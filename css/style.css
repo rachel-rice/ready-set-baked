@@ -24,6 +24,7 @@
 orange- #FF8800 */
 body{
   font-size: 100%;
+  max-width: 100vw;
 }
 
 h1, h2, h3, h4{
@@ -38,6 +39,11 @@ a, span, p{
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+/******** 
+main landing page 
+*********/
+
 .hero{
   padding-top: 1rem;
   background-color: #F3F7F8;
@@ -152,6 +158,9 @@ main .landing .landing-right{
   width: 35%;
 }
 
+/********************* 
+about us section 
+**********************/
 
 .section-one{
   display: flex;
@@ -200,6 +209,10 @@ main .landing .landing-right{
 .section-one .section-one-right p + p{
   margin-bottom: 3rem;
 }
+
+/******************** 
+menu items section
+*********************/
 
 .section-two{
   background-color: rgb(236, 237, 239);
@@ -281,6 +294,10 @@ section > a{
   margin: 1rem;
 }
 
+/*********************
+store info section
+********************/
+
 .section-three{
   
   background-color: rgb(243, 244, 245); 
@@ -318,7 +335,6 @@ section > a{
 .open{
   display: flex;
   flex-direction: column;
-
 }
 
 .open .time, .open .day{
@@ -342,8 +358,11 @@ section > a{
 .section-three section img{
  margin-top: 3rem;
 width: 75%;
-
 } 
+
+/******** 
+reviews
+*********/
 
 .section-four{
   display: flex;
@@ -380,6 +399,10 @@ width: 75%;
   line-height: 2.2rem;
   color: rgb(100, 100, 100);
 }
+
+/********* 
+footer
+************/
 
 footer {
   width: 100%;
