@@ -21,7 +21,7 @@
 	<body>
 		<section class="hero">
 		<header>
-			<nav>
+			<nav class="menu-main">
 				<div class="logo">
 					<a href="#"><img src="./img/default-monochrome.svg" alt="website-logo"></a>
 				</div>
@@ -32,22 +32,47 @@
 						<li><a href="#">Menu</a></li>
 						<li><a href="#">Order Now</a></li>
 						<li><a href="#">Blog</a></li>
-						<li><a href="#">Location</a></li>
+						<li><a href="#">Contact</a></li>
 						<li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
 						<li><a href="#"><i class="fas fa-search"></i></a></li>
-				</ul>
+					</ul>
 				</div>
 			</nav>
+			<div class="burg">
+				<div class="logo">
+					<a href="#"><img src="./img/default-monochrome.svg" alt="website-logo"></a>
+				</div>
+				<section class="p-menu1">
+					<nav id="navbar" class="navigation" role="navigation">
+					  <input id="toggle1" type="checkbox" />
+					  <label class="hamburger1" for="toggle1">
+						<div class="top"></div>
+						<div class="meat"></div>
+						<div class="bottom"></div>
+					  </label>
+					
+					  <nav class="menu1">
+						<a class="link1" href="index.html">Home</a>
+						<a class="link1" href="about.html">About</a>
+						<a class="link1" href="menu.html">Menu</a>
+						<a class="link1" href="contact.html">Contact</a>
+					  </nav>
+				  </nav>
+				  </section>
+				</div>
+
+			</nav>
+			  
+			  
 		</header>
 		<main>
 			<section class="landing">
-				<section class="landing-left">
+				
 					<h1>Welcome To<br> Ready Set Baked</h1>
 
 					<div class="form">
 						<input type="text" placeholder="Search here">
 						<a href="#">Location</a>
-
 					</div>
 					
 					<ul class="social">
@@ -57,14 +82,12 @@
 								<span>252k</span>
 							</a>
 						</li>
-
 						<li>
 							<a href="#">
 								<i class="fa-brands fa-twitter"></i>
 								<span>62k</span>
 							</a>
 						</li>
-						
 						<li>
 							<a href="#">
 								<i class="fa-brands fa-instagram"></i>
@@ -73,9 +96,6 @@
 						</li>
 					</ul>
 				</section>
-
-				<section class="landing-right"></section>
-			</section>
 		</main>
 	</section>
 
@@ -89,7 +109,7 @@
 
 				<h2>Discover Our Bakeries Story</h2>
 
-				<p>We started baking at home as a hobby. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas id doloribus. Accusamus in unde qui quaerat sunt voluptas perferendis, quasi sequi hic earum rerum sed enim dignissimos consequatur eos, aperiam suscipit inventore dolorem. Sint dolor harum laudantium temporibus expedita aliquam repellendus doloribus asperiores repudiandae quasi? Magnam consequatur ipsam maiores dolorum, commodi, assumenda modi eius iste voluptatum, magni laborum officia?</p>
+				<p>We started baking at home as a hobby. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas id doloribus. Accusamus in unde qui quaerat sunt voluptas perferendis, quasi sequi hic earum rerum sed enim dignissimos. Accusamus in unde qui quaerat sunt voluptas perferendis, quasi sequi hic earum rerum sed enim dignissimo. Consequatur ipsam maiores dolorum, commodi, assumenda modi eius iste voluptatum, magni laborum officia?</p>
 				
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, accusantium. Molestiae corrupti rerum repellendus vel ipsa dignissimos iure numquam itaque!</p>
 
@@ -111,15 +131,19 @@
 					<li class="cat"><a href="#">Shake</a></li>
 				</ul>
 
-				<section>
+				<section class="food">
+				<div class="food1">
 					<img src="img/chocolate.jpg" alt="chocolate baked goods">
 					<img src="img/cinn-roll.jpg" alt="cinnamon rolls">
 					<img src="img/lemon-tart.jpg" alt="lemon tart">
 					<img src="img/muffin.jpg" alt="muffins">
+				</div>
+				<div class="food1">
 					<img src="img/cake.jpg" alt="chocolate cake">
 					<img src="img/round-bread.jpg" alt="round loaf of bread">
 					<img src="img/merengue.jpg" alt="merengue pie">
 					<img src="img/cookies.jpg" alt="chocloate chip cookies">
+				</div>
 				</section>
 			</section>
 		</section>
@@ -131,12 +155,12 @@
 						<h2 class="section-h2">Hours</h2>
 						<section class="hours">
 							<section class="open">
-								<span class="day">Monday through Thursday</span>
-								<span class="time">09:00 am - 10:00 pm</span>
+								<span class="day">Monday - Thursday</span>
+								<span class="time">7:00 am - 8:00 pm</span>
 							</section>
 							<section class="open">
-								<span class="day">Friday through Sunday</span>
-								<span class="time">11:00 am - 8:00 pm</span>
+								<span class="day">Friday - Sunday</span>
+								<span class="time">8:00 am - 10:00 pm</span>
 							</section>
 						</section>
 						<section class="phone">
@@ -178,15 +202,18 @@
 			
 					<div class="container">
 						<h3 class="footer-h3">Open Hours</h3>
-						<span>Mon-Thurs 9 AM - 10 PM</span>
-						<span>Fri-Sun: 11 AM - 8 PM</span>
+						<p class="footer">Mon-Thurs 9 AM - 10 PM
+						<br>Fri-Sun: 11 AM - 8 PM</p>
 					</div>
 
 					<div class="container">
 						<h3 class="footer-h3">Contact Us</h3>
-						<span>123 Fake Street, Portland, OR</span>
-						<span>Email: info@readysetbaked.com</span>
-						<span>Telephone: (503) 555 5555</span>
+						<p class="footer">123 Fake Street 
+						<br>Portland, OR
+						<p class="footer">
+							<a href="mailto:#">info@readysetbaked.com</a>
+							<br>(503) 555 5555
+						</p>
 					</div>
 				</section>
 				<section class="footer-section-right">
@@ -200,7 +227,7 @@
 			</section>
 
 			<section class="footer-bottom">
-				<span>2023 | Ready Set Baked | Developed by Rachel R.</span>
+				<p class="footer">2023 | Ready Set Baked | Developed by Rachel R.</p>
 
 				<ul class="social-two">
 					<li>
