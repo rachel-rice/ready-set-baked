@@ -213,7 +213,7 @@ main .landing {
 }
 
 main .landing h1{
-  font-size: 4.6rem;
+  font-size: 4rem;
 }
 
 main .landing .form{
@@ -300,7 +300,7 @@ about us section
 
 .section-one .section-one-right h2{
   color: #000000;
-  font-size:  3.8rem;
+  font-size:  3.5rem;
   margin-top: 1rem;
 }
 
@@ -527,7 +527,7 @@ footer .footer-top .footer-section-left .container{
 }
 
 footer .footer-top .footer-h3{
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -590,9 +590,10 @@ footer .footer-bottom .social-two li a{
 /******************************************
 /* MEDIA QUERIES
 /*******************************************/
-@media screen and (min-width:1230px){
-  .section-two{
-  
+@media screen and (max-width:1000px) {
+  /* make images 2 rows */
+  .section-two section section{
+    padding: 0 15% 3rem 0;
   }
 }
 
@@ -602,12 +603,9 @@ footer .footer-bottom .social-two li a{
   display: none;
 }
 }
- 
-
-
 
 @media screen and (max-width:900px){
-  /* hid nav on smaller screens */
+  /* hide nav on smaller screens */
   .menu-main{
     display: none;
   }
@@ -616,12 +614,11 @@ footer .footer-bottom .social-two li a{
     display: flex;
     justify-content: space-between;
     margin-left: 10%;
-    
   }
 
-  /* make h1 smaller */
+  /* remove h1 from doc*/
   main .landing h1{
-    font-size: 3.6rem;
+    display: none;
   }
 
   /* fix button issue?? */
@@ -629,7 +626,7 @@ footer .footer-bottom .social-two li a{
     display: flex;
   }
 
-  /* hiding image and adjusting formating for no image */
+  /* hiding image and adjusting formating for no image in about us section */
   .section-one .section-one-left{
     display: none;
   }
@@ -637,11 +634,7 @@ footer .footer-bottom .social-two li a{
     width: 80%;
     padding: 5% 10%; 
   }
-  .section-h2{
-    font-size: 1.8rem; 
-  }
 
-  
 }
 
 @media screen and (max-width:768px) {
@@ -652,6 +645,11 @@ footer .footer-bottom .social-two li a{
   .section-one .section-one-right h2{
     font-size:  2rem;
   }
+
+  .section-two section section{
+    padding: 0 0 3rem 0;
+  }
+
   .section-h2{
     font-size: 2rem; 
   }
@@ -694,11 +692,11 @@ footer .footer-bottom .social-two li a{
     width: 50%;
   }
 }
+
+
 /* 
-
-drops to width 900
-make hamburger menu
-
+to do:
+finish hamburger menu
 
 drops to 768
 fix contact section
