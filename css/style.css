@@ -53,7 +53,7 @@ main landing page
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 42rem;
+  
 }
 
 header {
@@ -98,7 +98,7 @@ header nav ul li a{
 /* hidden hamburger formatting start */
 
 .p-menu1{
-
+  
   height: 100%;
 }
 
@@ -152,7 +152,7 @@ header nav ul li a{
 /* Menu */
 .menu1 {
  width: 100%;
- background-color: transparent;
+ background-color: white;
  margin: 0;
  display: -ms-grid;
  display: grid;
@@ -182,10 +182,11 @@ header nav ul li a{
 .link1 {
  width: 100%;
  margin: 0;
- padding: 10px 20px;
+ /* padding: 5px 10px; */
  font-size: 700 20px;
  font-family: 'Roboto', sans-serif;
  text-decoration: none;
+ text-transform: uppercase;
  color: black;
 }
 
@@ -204,13 +205,12 @@ main .landing{
   display: flex;
   flex-direction: column;
   margin-left: 10%;
-  width: 50%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 60%;
+
 }
 
-main .landing {
-  margin-left: 10%;
-  width: 55%;
-}
 
 main .landing h1{
   font-size: 4rem;
@@ -219,7 +219,7 @@ main .landing h1{
 main .landing .form{
   width: 100%;
   height: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 main .landing .form input{
@@ -350,14 +350,16 @@ section > a{
 
 .section-two ul{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;  
   width: 50%;
   margin: auto;
   margin-top: 1rem;
   margin-bottom: 4rem;
   height: 2rem; 
   padding: 0;
+  border-bottom: 1.6px solid rgba(128, 128, 128, 0.54);
 }
+
 
 
 .section-two ul li a{
@@ -366,20 +368,17 @@ section > a{
   font-size: 1.1rem;
   padding-bottom: 0.8rem;
 }
+
 /* make this hover orange when on it:
-
-
 .section-two ul .breakfast{
   color: #FF8800;
   border-bottom: 2.3px solid #FF8800
 } */
 
 .section-two .categories li{
-
   list-style: none;
   display: inline;
   width: 20%;
-  border-bottom: 1.6px solid rgba(128, 128, 128, 0.54);
   padding-bottom: 1rem;
 
 }
@@ -427,7 +426,7 @@ store info section
 .hours{
   display: flex;
   justify-content: space-around;
-  height: 7rem;
+  padding-bottom: 1rem;
   
 }
 
@@ -455,8 +454,8 @@ store info section
 }
 
 .section-three section img{
- margin-top: 3rem;
-width: 75%;
+  margin-top: 3rem;
+  width: 75%;
 } 
 
 /******** 
@@ -590,18 +589,23 @@ footer .footer-bottom .social-two li a{
 /******************************************
 /* MEDIA QUERIES
 /*******************************************/
-@media screen and (max-width:1000px) {
-  /* make images 2 rows */
-  .section-two section section{
-    padding: 0 15% 3rem 0;
+
+/* hide hamburger on full screen */
+@media screen and (min-width:901px){
+ .burg{
+  display: none;
+  }
+  
+  .landing .logo{
+    display: none;
   }
 }
 
-@media screen and (min-width:901px){
- /* hide hamburger on full screen */
- .burg{
-  display: none;
-}
+@media screen and (max-width:1000px) {
+  /* make images 2 rows */
+  .section-two section section{
+    padding: 0 15% 3rem 15%;
+  }
 }
 
 @media screen and (max-width:900px){
@@ -616,12 +620,16 @@ footer .footer-bottom .social-two li a{
     margin-left: 10%;
   }
 
-  /* remove h1 from doc*/
-  main .landing h1{
+  .landing h1{
     display: none;
   }
 
-  /* fix button issue?? */
+  main .landing h1 + .logo img{ 
+    padding-bottom: 4rem;
+    height: 175px;
+  }
+
+  /* fix button issue */
   main .landing .form{
     display: flex;
   }
@@ -634,36 +642,41 @@ footer .footer-bottom .social-two li a{
     width: 80%;
     padding: 5% 10%; 
   }
-
 }
 
 @media screen and (max-width:768px) {
-  /* make h1 smaller */
+  /* hide h1 and drop logo down to main */
   main .landing h1{
-    font-size: 2.6rem;
+    display: none;
   }
+  /* make heading smaller */
   .section-one .section-one-right h2{
     font-size:  2rem;
   }
+  .section-h2{
+    font-size: 2rem; 
+  }
 
+  /* readjust image padding to fit 2 rows */
   .section-two section section{
     padding: 0 0 3rem 0;
   }
 
-  .section-h2{
-    font-size: 2rem; 
+  .hours{
+    flex-direction: column;
   }
 }
 
 @media screen and (max-width:600px) {
-
+/* adjust social section */
   main .landing ul li{
     height: 2rem;
     margin-right: 2rem;
     list-style: none;
     display: inline;
   }
- 
+ /* make courses links 2 rows */
+
 
 }
 
@@ -675,7 +688,7 @@ footer .footer-bottom .social-two li a{
 
   /* make photos single column */
   .section-two section section{
-    padding: 0 3rem;
+    padding: 0 15% 3rem 15%;
   }
 
   /* make footer sections stack */
@@ -693,14 +706,3 @@ footer .footer-bottom .social-two li a{
   }
 }
 
-
-/* 
-to do:
-finish hamburger menu
-
-drops to 768
-fix contact section
-fix hero background or ditch
-fix meal links
-
-*/
