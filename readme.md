@@ -1,7 +1,7 @@
 # Ready Set Baked
-Static mock website for bakery
+Concept website for bakery.
 
-**Link to project:** 
+**Link to project:** http://recruiters-love-seeing-live-demos.com/
 
 ![alt tag](img/screenshot.png)
 
@@ -9,7 +9,7 @@ Static mock website for bakery
 
 **Tech used:** HTML, CSS
 
-Built a basic informational website for a bakery. Really got to play around with some CSS and HTML. Added styles and responsiveness for different screen sizes. 
+Built a concept informational website for a bakery. Really got to play around with some CSS and HTML. Added styles and responsiveness for different screen sizes. 
 
 ## Lessons Learned:
 
