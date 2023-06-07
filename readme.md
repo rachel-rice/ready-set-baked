@@ -1,7 +1,7 @@
 # Ready Set Baked
 Static mock website for bakery
 
-**Link to project:** http://recruiters-love-seeing-live-demos.com/
+**Link to project:** 
 
 ![alt tag](img/screenshot.png)
 
