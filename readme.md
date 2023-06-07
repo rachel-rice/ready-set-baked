@@ -1,7 +1,7 @@
 # Ready Set Baked
 Concept website for bakery.
 
-**Link to project:** http://recruiters-love-seeing-live-demos.com/
+**Link to project:** https://ready-set-baked.netlify.app/
 
 ![alt tag](img/screenshot.png)
 
